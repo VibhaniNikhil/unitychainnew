@@ -72,40 +72,40 @@ class App extends Component {
 			// 	transparent: true
 			// } ),
 			new THREE.MeshLambertMaterial( {
-				 map: texture, name: 'camera', transparent: true, width: '100%'
+				 map: texture, name: 'camera', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture1, name: 'camera', transparent: true, width: '100%'
+				map: texture1, name: 'camera', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture2, name: 'camera', transparent: true, width: '100%'
+				map: texture2, name: 'camera', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture3, name: 'camera', transparent: true, width: '100%'
+				map: texture3, name: 'camera', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture4, name: 'twitter', transparent: true, width: '100%'
+				map: texture4, name: 'twitter', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture5, name: 'linkedin', transparent: true, width: '100%'
+				map: texture5, name: 'linkedin', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture6, name: 'linkedin', transparent: true,
+				map: texture6, name: 'linkedin', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture7, name: 'linkedin', transparent: true,
+				map: texture7, name: 'linkedin', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture8, name: 'linkedin', transparent: true,
+				map: texture8, name: 'linkedin', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture9, name: 'linkedin', transparent: true,
+				map: texture9, name: 'linkedin', transparent: true, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture10, name: 'linkedin', transparent: true,opacity: 0.5,
+				map: texture10, name: 'linkedin', transparent: true,opacity: 0.5, wireframe: false
 			} ),
 			new THREE.MeshLambertMaterial( {
-				map: texture11, name: 'linkedin', transparent: true,opacity: 0.5,
+				map: texture11, name: 'linkedin', transparent: true,opacity: 0.5, wireframe: false
 			} )
 		];
 
@@ -181,7 +181,7 @@ class App extends Component {
 		
 		this.scene.add( this.group );
 
-		var vertices = new THREE.DodecahedronGeometry( 10 ).vertices;
+		var vertices = new THREE.DodecahedronGeometry( 1 ).vertices;
 
 		for ( var i = 0; i < vertices.length; i ++ ) {
 			//vertices[ i ].add( randomPoint().multiplyScalar( 2 ) ); // wiggle the points
